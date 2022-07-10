@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RequestBlood">
+
+    <ImageButton
+        android:id="@+id/home_btnR"
+        android:layout_width="130dp"
+        android:layout_height="64dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/viewrequest_btnR"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/submit_btn"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/icons8_home_page_75"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/viewrequest_btnR"
+        android:layout_width="130dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/makerequest_btnR"
+
+        app:layout_constraintTop_toBottomOf="@+id/submit_btn"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/icons8_bell_75"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/makerequest_btnR"
+        android:layout_width="130dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+
+        app:layout_constraintTop_toBottomOf="@+id/submit_btn"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/icons8_add_75"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/black"
+        android:text="SUBMIT"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/details"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toStartOf="@+id/details"
+        app:layout_constraintTop_toBottomOf="@+id/details" />
+
+    <EditText
+        android:id="@+id/details"
+        android:layout_width="317dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:background="#609ACA9C"
+        android:ems="10"
+        android:hint="More detail about case"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/Phone_no."
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Phone_no."
+        app:layout_constraintTop_toBottomOf="@+id/Phone_no." />
+
+    <AutoCompleteTextView
+        android:id="@+id/Select_District2"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="72dp"
+        android:background="#E5E3E3"
+        android:completionThreshold="1"
+        android:ems="10"
+        android:hint="Select District"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/contact_Person_Name"
+        app:layout_constraintHorizontal_bias="0.011"
+        app:layout_constraintStart_toStartOf="@+id/contact_Person_Name"
+        app:layout_constraintTop_toBottomOf="@+id/contact_Person_Name" />
+
+    <EditText
+        android:id="@+id/Patient_Age"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="#E5E3E3"
+        android:ems="10"
+        android:hint="Patient Age"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/contact_Person_Name"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/contact_Person_Name"
+        app:layout_constraintTop_toBottomOf="@+id/Select_District2" />
+
+    <AutoCompleteTextView
+        android:id="@+id/Blood_Type2"
+        android:layout_width="151dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="60dp"
+        android:background="#E5E3E3"
+        android:completionThreshold="1"
+        android:ems="10"
+        android:hint="Blood Type"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/Patient_Age"
+        app:layout_constraintEnd_toEndOf="@+id/contact_Person_Name"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/Select_District2" />
+
+    <EditText
+        android:id="@+id/Patient_Name"
+        android:layout_width="322dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="68dp"
+        android:background="#E5E3E3"
+        android:ems="10"
+        android:hint="Patient Name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/Requestform"
+        app:layout_constraintHorizontal_bias="0.424"
+        app:layout_constraintStart_toStartOf="@+id/Requestform"
+        app:layout_constraintTop_toBottomOf="@+id/Requestform" />
+
+    <EditText
+        android:id="@+id/contact_Person_Name"
+        android:layout_width="322dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="#E5E3E3"
+        android:ems="10"
+        android:hint="Contact Person Name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/Requestform"
+        app:layout_constraintHorizontal_bias="0.446"
+        app:layout_constraintStart_toStartOf="@+id/Requestform"
+        app:layout_constraintTop_toBottomOf="@+id/Requestform" />
+
+    <EditText
+        android:id="@+id/Hospital_Name"
+        android:layout_width="322dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="#E5E3E3"
+        android:ems="10"
+        android:hint="Hospital Name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.561"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Patient_Age" />
+
+    <TextView
+        android:id="@+id/Requestform"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Request Form"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+
+
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Units_Required"
+
+        android:layout_width="322dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="#E5E3E3"
+        android:ems="10"
+        android:hint="Required Units"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textColorHint="@color/black"
+
+        app:layout_constraintEnd_toEndOf="@+id/Hospital_Name"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/Hospital_Name"
+        app:layout_constraintTop_toBottomOf="@+id/Hospital_Name" />
+
+    <EditText
+        android:id="@+id/Phone_no."
+        android:layout_width="322dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:background="#E5E3E3"
+        android:ems="10"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:padding="10dp"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/Units_Required"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Units_Required"
+        app:layout_constraintTop_toBottomOf="@+id/Units_Required" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toTopOf="@+id/viewrequest_btnR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/submit_btn"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="HOME"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/viewrequest_btnR"
+        app:layout_constraintHorizontal_bias="0.606"
+        app:layout_constraintStart_toStartOf="@+id/home_btnR"
+        app:layout_constraintTop_toTopOf="@+id/home_btnR" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="View Request"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/viewrequest_btnR"
+        app:layout_constraintHorizontal_bias="0.564"
+        app:layout_constraintStart_toEndOf="@+id/home_btnR"
+        app:layout_constraintTop_toTopOf="@+id/viewrequest_btnR" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Make Request"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/makerequest_btnR"
+        app:layout_constraintStart_toStartOf="@+id/makerequest_btnR"
+        app:layout_constraintTop_toTopOf="@+id/makerequest_btnR" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
